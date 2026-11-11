@@ -1,0 +1,9 @@
+角色：小宁
+来源页面：https://aolinai.com/#digital-life
+模型来源：https://aolinai.com/models/xiaoning-opt.aolinbin
+默认脸部来源：https://aolinai.com/assets/f/14ee31be705f3bef.bin
+资源提取日期：2026-11-10
+
+页面使用同一对话中已提取并转换的真实 GLB：贴图、101 个骨骼关节、12 段骨骼动画；脸部使用独立默认表情图集（30 帧、15fps）。
+为离线 file:// 页面兼容，资源编码在 character-data.js 内。没有外部 CDN、模型请求或构建步骤。
+资源整理不附带权利人的使用许可。

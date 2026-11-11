@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff0e6">
+  <title>OKI · 和小宁在一起</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="phone home">
+  <img class="home-scene" src="assets/home-scene.png" alt="">
+  <div class="system-bar" aria-hidden="true"><span>9:41</span><i class="dynamic-island"></i><div class="system-levels"><img src="assets/cellular.svg" alt=""><img src="assets/wifi.svg" alt=""><img src="assets/battery.svg" alt=""></div></div>
+  <header class="topbar home-topbar">
+    <button class="glass round-button" data-action="more" aria-label="关于小宁" aria-haspopup="dialog"><span data-icon="more"></span></button>
+    <button class="glass round-button sound-button" data-action="sound" aria-label="声音已开启，点击静音" aria-pressed="false"><span data-icon="speaker"></span></button>
+  </header>
+
+  <section class="character-stage" aria-label="小宁的三维角色舞台">
+    <div class="character-shadow" aria-hidden="true"></div>
+    <div class="character-mount" id="characterMount" role="img" aria-label="可以左右拖动、轻触互动的小宁三维角色"></div>
+    <div class="stage-loading" id="stageLoading" role="status"><span></span><p>小宁马上就来</p></div>
+    <div class="listening-orbit" aria-hidden="true"></div>
+    <p class="voice-status sr-only" id="voiceStatus" role="status" aria-live="polite"></p>
+  </section>
+
+  <div class="home-bottom">
+    <nav class="home-portals" aria-label="快捷入口">
+      <button class="portal glass" data-action="notebook"><span class="asset-crop notebook-art"><img src="assets/notebook-3d.png" alt=""></span><span class="portal-copy"><strong>记事本</strong><small>收好每个小念头</small></span></button>
+      <a class="portal glass" href="world.html"><span class="asset-crop map-art"><img src="assets/world-map-3d.png" alt=""></span><span class="portal-copy"><strong>小小世界</strong><small>一起发现新鲜事</small></span></a>
+    </nav>
+    <form class="home-composer" id="homeComposer">
+      <button class="glass call-button" type="button" data-action="call" aria-label="给小宁打电话"><span data-icon="phone"></span></button>
+      <div class="glass message-field">
+        <button class="composer-icon" type="button" data-action="voice" aria-label="发送语音消息"><span data-icon="mic"></span></button>
+        <input id="homeMessage" name="message" aria-label="发消息" placeholder="发消息" maxlength="500" autocomplete="off" enterkeyhint="send">
+        <button class="composer-icon clear-message" type="button" id="clearMessage" aria-label="清空输入"><span data-icon="close"></span></button>
+        <button class="composer-icon home-send" type="submit" id="homeSend" aria-label="发送消息" hidden><span data-icon="send"></span></button>
+      </div>
+    </form>
+  </div>
+  <div class="home-indicator" aria-hidden="true"></div>
+</main>
+<script src="app.js"></script>
+<script src="assets/character-data.js" defer></script>
+<script src="character.js" defer></script>
+</body>
+</html>

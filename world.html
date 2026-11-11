@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf9f7">
+  <title>OKI · 小小世界</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="world.css">
+</head>
+<body>
+<main class="phone world">
+<div class="system-bar" aria-hidden="true"><span>9:41</span><i class="dynamic-island"></i><div class="system-levels"><img src="assets/cellular.svg" alt=""><img src="assets/wifi.svg" alt=""><img src="assets/battery.svg" alt=""></div></div>
+  <header class="page-navigation"><a class="round-button glass" href="oki.html" aria-label="返回首页"><span data-icon="back"></span></a><span>小小世界</span><button class="round-button glass sound-button" data-action="sound" aria-label="声音已开启，点击静音" aria-pressed="false"><span data-icon="speaker"></span></button></header>
+
+  <section class="world-intro" aria-labelledby="worldTitle">
+    <div><h1 id="worldTitle">小小世界</h1><p>今天，想一起玩点什么？</p></div>
+    <span class="world-intro-icon asset-crop map-art"><img src="assets/world-map-3d.png" alt=""></span>
+  </section>
+
+  <nav class="venues" aria-label="玩法场馆">
+    <button class="active" data-venue="0" aria-pressed="true"><span data-icon="spark" aria-hidden="true"></span>能力馆</button>
+    <button data-venue="1" aria-pressed="false"><span data-icon="game" aria-hidden="true"></span>游戏屋</button>
+    <button data-venue="2" aria-pressed="false"><span data-icon="ticket" aria-hidden="true"></span>小剧场</button>
+  </nav>
+
+  <div class="world-scroll" tabindex="0" aria-label="小小世界的推荐与玩法">
+    <section class="feature" aria-labelledby="featureTitle">
+      <div class="feature-copy"><span class="feature-tag" id="featureTag">今日灵感 · 好好吃饭</span><h2 id="featureTitle">晚餐吃什么？<br>听听肚子的主意</h2><p id="featureDesc">选择困难，就交给一点小惊喜。</p><button class="feature-try" id="featureTry">一起试试<span data-icon="arrow" aria-hidden="true"></span></button></div>
+      <span class="feature-art" id="featureArt" data-art="meal" aria-hidden="true"></span>
+    </section>
+
+    <div class="section-title"><h2 id="sectionTitle">小宁的拿手好戏</h2><span id="count">8 个精选本领</span></div>
+    <nav class="categories" aria-label="筛选玩法">
+      <button class="selected" data-category="全部" aria-pressed="true">为你精选</button>
+      <button data-category="生活" aria-pressed="false">生活日常</button>
+      <button data-category="灵感" aria-pressed="false">灵感趣玩</button>
+      <button data-category="成长" aria-pressed="false">一起成长</button>
+    </nav>
+    <div class="cards" id="cards"></div>
+    <p class="world-endnote">有趣的日常，和你慢慢发现。</p>
+  </div>
+
+  <div class="home-indicator" aria-hidden="true"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

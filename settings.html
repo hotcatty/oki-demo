@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f2f2f7"><title>OKI · 设置</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="phone settings-page"><div class="system-bar" aria-hidden="true"><span>9:41</span><i class="dynamic-island"></i><div class="system-levels"><img src="assets/cellular.svg" alt=""><img src="assets/wifi.svg" alt=""><img src="assets/battery.svg" alt=""></div></div>
+<header class="page-navigation"><a class="round-button glass" href="oki.html" aria-label="返回首页"><span data-icon="back"></span></a><span>设置</span><span class="nav-spacer"></span></header>
+<div class="settings-scroll" id="settingsGroups"><h1>设置</h1><p class="section-caption">陪伴，按你喜欢的方式</p>
+<section class="settings-section" aria-labelledby="prefTitle"><h2 id="prefTitle">偏好设置</h2><div class="grouped-list">
+<button class="row sound-setting" data-action="sound" aria-pressed="false"><span class="setting-icon blue" data-icon="speaker"></span><span class="row-copy sound-setting-copy">声音已开启</span><span class="switch-display" aria-hidden="true"></span></button>
+<label class="row"><span class="setting-icon violet" data-icon="eye"></span><span class="row-copy">降低透明度<small>增加控件和文字的对比度</small></span><input class="system-switch" id="reduceTransparency" type="checkbox"></label>
+</div></section>
+<section class="settings-section" aria-labelledby="dataTitle"><h2 id="dataTitle">我的内容</h2><div class="grouped-list">
+<button class="row" data-action="history"><span class="setting-icon green" data-icon="history"></span><span class="row-copy">聊天记录</span><span data-icon="arrow"></span></button>
+<button class="row" data-action="notebook"><span class="setting-icon orange" data-icon="note"></span><span class="row-copy">记事本</span><span data-icon="arrow"></span></button>
+<button class="row destructive" id="clearHistory"><span class="row-copy">清空聊天记录</span></button>
+</div><p class="settings-footnote">消息和笔记保存在当前浏览器，不会上传。</p></section>
+<section class="settings-section" aria-labelledby="appTitle"><h2 id="appTitle">关于</h2><div class="grouped-list"><button class="row" id="aboutApp"><span class="setting-icon gray" data-icon="help"></span><span class="row-copy">关于 OKI</span><span class="row-detail">交互原型</span><span data-icon="arrow"></span></button></div></section>
+</div><div class="home-indicator" aria-hidden="true"></div></main><script src="app.js"></script></body></html>
